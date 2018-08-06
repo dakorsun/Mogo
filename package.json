@@ -1,0 +1,30 @@
+{
+  "name": "mogo",
+  "version": "1.0.0",
+  "description": "Mogo Landing Page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dakorsun/Mogo.git"
+  },
+  "author": "dakorsun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dakorsun/Mogo/issues"
+  },
+  "homepage": "https://github.com/dakorsun/Mogo#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-inject-svg": "^0.1.18",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-glob": "^1.0.9"
+  }
+}
