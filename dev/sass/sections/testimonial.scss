@@ -1,0 +1,70 @@
+.testimonial {
+    margin-bottom: 130px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__arrow {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 86.198347107%;
+
+        &-pic {
+            width: 20.134228188%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        &-content {
+            width: 76.893576222%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: baseline;
+
+            &-text {
+                width: 100%;
+                color: #999999;
+                font-family: "Roboto - Light Italic";
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 20px;
+            }
+
+            &-sub {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                &-string {
+                    width: 60px;
+                    height: 3px;
+                    background: #f38181;
+                    margin-right: 10px;
+                    display: inline-block;
+                }
+    
+                &-autor {
+                    color: #333333;
+                    font-family: "Kaushan Script";
+                    font-size: 24px;
+                    font-weight: 400;
+                    display: inline-block;
+                }
+            } 
+            
+        }
+    }
+}
