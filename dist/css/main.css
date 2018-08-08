@@ -1308,6 +1308,7 @@ section {
 
 .team__photo-block-photo-content-links-link:hover {
   background-color: #f38181;
+  cursor: pointer;
   -webkit-transition: background-color ease .5s;
   -o-transition: background-color ease .5s;
   transition: background-color ease .5s; }
