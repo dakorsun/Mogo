@@ -1,0 +1,73 @@
+.quote {
+    margin-top: 120px;
+    background: #f8f8f8;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__arrow {
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__block {
+        width: 80.826446281%;
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 0;
+
+        &-icon {
+            width: 150px;
+            height: 150px;
+            border: 3px solid #95e1d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            svg {
+                width: 42%;
+                height: 40.666666667%;
+            }
+        }
+
+        &-main {
+            width: 79.23553719%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        
+            &-text {
+                color: #999999;
+                font-family: "Roboto - Light Italic";
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 20px;
+            }
+
+            &-bottom {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                &-string {
+                    width: 60px;
+                    height: 3px;
+                    background: #f38181;
+                    margin-right: 10px;
+                }
+
+                &-autor {
+                    color: #333333;
+                    font-family: "Kaushan Script";
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

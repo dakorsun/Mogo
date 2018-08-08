@@ -1,0 +1,160 @@
+.team {
+
+    .container {
+
+    }
+
+    &__heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #333333;
+        font-family: "Kaushan Script";
+        font-size: 24px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #333333;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__string {
+        margin: 0 auto;
+        width: 60px;
+        height: 3px;
+        background: #f38181;
+        margin-bottom: 40px;
+    }
+
+    &__description {
+        margin: 0 auto;
+        width: 78.842975207%;
+        color: #999999;
+        font-family: Roboto;
+        font-size: 15px;
+        margin-bottom: 90px;
+    }
+
+    &__photo-block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &-container {
+            width: 31.404958678%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-wrapper {
+            background: #000;
+            margin-bottom: 30px;
+
+            &:hover {
+                background: #95e1d3;
+                transition: background .5s;
+
+                & .team__photo-block-photo {
+                    transform: translate(-8px, -8px);
+                    transition: transform .5s;
+                }
+            
+                & .team__photo-block-photo-content {
+                    opacity: 1;
+                    transition: opacity .3s;
+                }
+            } 
+        } 
+        
+        &-photo {
+            position: relative;
+            z-index: 20;
+            
+            img {
+
+            }
+
+            &-content {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+            
+                &-links {
+                    height: 56px;
+                    display: flex;
+                    align-items: center;
+                    
+                    &-link {
+                        width: 56px;
+                        height: 56px;
+                        background-color: #fce38a;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+
+                        &:hover {
+                            background-color: #f38181;
+                            transition: background-color ease .5s;
+
+                            svg {
+                                fill: #fce38a;
+                                transition: fill ease .5s;
+                            }
+                        }
+
+                        svg {
+                            fill: #f38181;
+                            width: 50%;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+
+        &-info-block {
+
+            &-name {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                color: #333333;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+
+            &-profession {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                color: #999999;
+                font-family: "Roboto - Light Italic";
+                font-size: 15px;
+
+            }
+        }
+    }
+}

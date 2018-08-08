@@ -1,0 +1,67 @@
+.header {
+    // background: red;
+
+    .container {
+        display: flex;
+        justify-content: space-between
+    }
+
+    &__logo {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 700;
+        padding: 28px 0;
+        font-family: Montserrat;
+    }
+
+    &__refs {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 0;
+        height: 100%;
+        width: 52.561983471%;
+        position: relative;
+        
+        &-icons{
+            width: 14.779874214%;
+            display: flex;
+            justify-content: space-between;
+        
+            &-cart {
+                cursor: pointer;
+            }
+
+            &-scope {
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    &__nav {
+        
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 68.553459119%;
+        
+
+
+        a {
+
+            display: inline-block;
+            font-size: 14px;
+            vertical-align: middle;
+            font-family: Montserrat;
+            color: #fff;
+            font-weight: 400;
+            text-transform: uppercase;
+
+        }
+
+    }
+
+    
+}

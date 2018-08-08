@@ -6,13 +6,12 @@ const sass = require('gulp-sass'),
   prefixer = require('gulp-autoprefixer');
 
 const injectSvg = require('gulp-inject-svg'),
-  injectSvgOptions = { base: '/dev/' };
+  injectSvgOptions = { base: '/dist/' };
 
 const babel = require('gulp-babel');
 
 gulp.task('sass', function () {
   gulp.src('dev/sass/main.scss')
-    .pipe(sass().on('error', sass.logError))
     .pipe(plumber())
     .pipe(glob())
     .pipe(sass())
@@ -20,6 +19,7 @@ gulp.task('sass', function () {
       browsers: ['last 10 versions'],
       cascade: false
     }))
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist/css'))
 });
 
@@ -35,7 +35,7 @@ gulp.task('babel', function () {
 gulp.task('markup', function () {
   gulp.src('dev/pages/*.html')
     .pipe(plumber())
-    // .pipe(injectSvg(injectSvgOptions))
+    .pipe(injectSvg(injectSvgOptions))
     .pipe(gulp.dest('dist'))
 });
 
@@ -48,6 +48,7 @@ gulp.task('fonts', function () {
   gulp.src(['dev/fonts/**/*', '!dev/fonts/*.sass'])
     .pipe(gulp.dest('dist/fonts'))
 });
+
 
 gulp.task('watch', function () {
   gulp.watch('dev/sass/**/*.s[a|c]ss', ['sass']);

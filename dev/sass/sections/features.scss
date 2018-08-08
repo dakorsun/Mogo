@@ -1,0 +1,72 @@
+.wrapper_features {
+    background-image: url(../images/MOUNTAIN_BACKGROUND.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    position: relative;
+}
+
+.features {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+
+    .container {
+        padding-top: 100px;
+
+    }
+
+    &__heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #333333;
+        font-family: "Kaushan Script";
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #333333;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__string {
+        width: 60px;
+        height: 3px;
+        margin: 0 auto;
+        background: #f38181;
+        margin-bottom: 45px;
+    }
+
+    &__image-block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &-tablet {
+            width: 39.421487603%;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+
+        }
+
+        &-mobile {
+            position: absolute;
+            right: -33.542976939%;
+            bottom: -90px;
+        }
+    }
+}
+

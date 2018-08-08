@@ -1,9 +1,12 @@
 @import "_reset.sass";
 @import 'fonts.scss';
+@import 'vars.scss';
+@import 'arrows.scss';
 
 body {
     position: relative;
     line-height: 1;
+    min-height: 6000px;
   }
 
   input, button {
@@ -17,10 +20,26 @@ body {
   .container {
     position: relative;
     margin: 0 auto;
-    width: 1110px;
-    max-width: 94%;
-    }
+    width: 1210px;
+    max-width: 80%;
+    
+  }
   
+  .wrapper {
+    width: 100%;
+    background-image: url(../images/Eagle_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+  
+    .subwrapper {
+      width: 100%;
+      background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+      z-index: 11;
+    }
 
+  }
 
-// @import 'sections/*.scss';
+@import "sections/*.scss";
