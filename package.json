@@ -26,5 +26,6 @@
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
     "gulp-sass-glob": "^1.0.9"
-  }
+  },
+  "dependencies": {}
 }

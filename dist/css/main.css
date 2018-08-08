@@ -120,7 +120,7 @@ input, button {
 body {
   position: relative;
   line-height: 1;
-  min-height: 7000px; }
+  min-height: 8000px; }
 
 input, button {
   font-family: inherit; }
@@ -1287,11 +1287,74 @@ section {
 
 .work__photos {
   width: 100%;
-  position: relative; }
+  position: relative;
+  font-size: 0; }
 
-.work__photos-photo {
-  display: inline-block;
-  width: 25%; }
+.work__photos-photo_block {
+  width: 25%;
+  display: inline-block; }
 
-.work__photos-photo img {
+.work__photos-photo_block-photo {
+  width: 100%;
+  position: relative;
+  vertical-align: top;
+  margin: 0; }
+
+.work__photos-photo_block-photo:hover {
+  cursor: pointer; }
+
+.work__photos-photo_block-photo:hover .work__photos-photo_block-photo-content {
+  opacity: 1;
+  -webkit-transition: opacity ease .5s;
+  -o-transition: opacity ease .5s;
+  transition: opacity ease .5s; }
+
+.work__photos-photo_block-photo img {
   display: block; }
+
+.work__photos-photo_block-photo-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
+  background-image: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.work__photos-photo_block-photo-content-icon {
+  margin-bottom: 20px; }
+
+.work__photos-photo_block-photo-content-title {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+
+.work__photos-photo_block-photo-content-desc {
+  color: #ffffff;
+  font-family: "Roboto - Light Italic";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; }
