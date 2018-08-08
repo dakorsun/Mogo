@@ -1,4 +1,5 @@
 .team {
+    padding-bottom: 115px;
 
     .container {
 
@@ -81,7 +82,7 @@
             z-index: 20;
             
             img {
-
+                display: block;
             }
 
             &-content {
@@ -124,6 +125,7 @@
                         svg {
                             fill: #f38181;
                             width: 50%;
+                            height: 50%;
                         }
                     }
 

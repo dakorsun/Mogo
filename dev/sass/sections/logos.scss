@@ -1,0 +1,20 @@
+.logos {
+    background: #f8f8f8;
+
+    .container {
+        padding: 60px 12px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-logo {
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
