@@ -1,0 +1,67 @@
+.map {
+    background-image: url(../images/map_bg.png);
+    width: 100%;
+    
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 55px 0;
+        background-color: rgba(255, 255, 255, 0.85);
+        display: flex;
+        justify-content: center;
+    }
+
+    &__block {
+
+        &:hover {
+            cursor: pointer;
+        
+            .map__block-pic {
+                
+                svg {
+                    fill: #999;
+                    transition: fill ease .5s;
+                }
+            }
+
+            .map__block-text {
+                color: #999;
+                transition: color ease .5s;
+            }
+
+            .map__block-string {
+                background: #999;
+                transition: background ease .5s;
+            }
+
+        }
+
+
+
+        &-pic {
+            margin-bottom: 18px;
+            text-align: center;
+
+            svg {
+                fill: #f38181; 
+            }
+        }
+
+        &-text {
+            color: #f38181;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &-string {
+            width: 60px;
+            height: 3px;
+            background: #f38181;
+            margin: 0 auto;
+        }
+    }
+}
