@@ -52,7 +52,7 @@ gulp.task('fonts', function () {
 
 gulp.task('watch', function () {
   gulp.watch('dev/sass/**/*.s[a|c]ss', ['sass']);
-  // gulp.watch('dev/scripts/*.js', ['babel']);
+  gulp.watch('dev/scripts/*.js', ['babel']);
   gulp.watch('dev/pages/*.html', ['markup']);
   // gulp.watch('dev/images/*', ['images']);
   gulp.watch('dev/fonts/**/*', ['fonts']);

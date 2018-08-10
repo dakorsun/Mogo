@@ -2,33 +2,53 @@
     margin-bottom: 130px;
 
     .container {
+        // display: flex;
+        // justify-content: space-between;
+    }
+
+    .swiper-container {
         display: flex;
         justify-content: space-between;
+        width: 100%;
+
+        .swiper-wrapper {
+            width: 86.198347107%;
+            position: relative;
+        }
     }
 
     &__arrow {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        padding: 10px 10px;
 
         &:hover {
             cursor: pointer;
         }
+        
     }
+
+        
+    
 
     &__block {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
-        width: 86.198347107%;
+        width: 100%;
+        position: relative;
 
         &-pic {
-            width: 20.134228188%;
+            width: 17.355371901%;
             border-radius: 50%;
             overflow: hidden;
+            margin-right: 30px;
         }
 
         &-content {
-            width: 76.893576222%;
+            width: 64.388429752%;
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
