@@ -22,7 +22,8 @@ body {
     margin: 0 auto;
     width: 1210px;
     max-width: 80%;
-    
+    overflow-x: hidden; 
+    overflow: visible;
   }
   
   .wrapper {
