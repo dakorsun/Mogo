@@ -163,6 +163,10 @@ section {
   .container {
     width: 90%; } }
 
+@media screen and (max-width: 550px) {
+  .container {
+    width: 95%; } }
+
 .about {
   width: 100%;
   padding-top: 90px; }
@@ -375,16 +379,19 @@ section {
   justify-content: space-between;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  overflow-x: visible; }
 
 .blog__blogs-block {
   width: 31.404958678%;
-  position: relative; }
+  position: relative;
+  overflow-x: visible; }
 
 .blog__blogs-block-pic {
   width: 100%;
   position: relative;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  overflow-x: visible; }
 
 .blog__blogs-block-pic-date {
   position: absolute;
@@ -914,7 +921,8 @@ section {
   color: #333333;
   font-family: Montserrat;
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-top: 40px; }
 
 .footer__footer span {
   color: #f38181; }

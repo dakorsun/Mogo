@@ -41,15 +41,18 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        overflow-x: visible;
 
         &-block {
             width: 31.404958678%;
             position: relative;
+            overflow-x: visible;
 
             &-pic {
                 width: 100%;
                 position: relative;
                 margin-bottom: 20px;
+                overflow-x: visible;
 
                 &-date {
                     position: absolute;

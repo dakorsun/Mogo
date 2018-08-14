@@ -57,4 +57,11 @@ body {
     }
   }
 
+  @media screen and (max-width: $bp-mobile-m){
+    
+    .container {
+      width: 95%;
+    }
+  }
+
 @import "sections/*.scss";
