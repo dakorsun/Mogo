@@ -35,4 +35,16 @@
         }
     }
 
+    @media screen and (max-width: $bp-tablet-l){
+        .container {
+            flex-direction: column;
+            border-left: none;
+        }
+
+        &__block {
+            padding: 20px 0;
+            border-right: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .3);
+        }
+    }
 }

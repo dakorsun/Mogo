@@ -1,20 +1,42 @@
 .logos {
-    background: #f8f8f8;
+	background: #f8f8f8;
 
-    .container {
-        padding: 60px 12px;
-    }
+	.container {
+			padding: 60px 12px;
+	}
 
-    &__block {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-        &-logo {
+		&-logo {
 
-            &:hover {
-                cursor: pointer;
-            }
-        }
-    }
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	@media screen and (max-width: $bp-tablet-l) {
+		&__block-logo {
+			width: 13%;
+		}
+	}
+
+	@media screen and (max-width: $bp-tablet-m) {
+		&__block {
+			flex-wrap: wrap;
+		
+			&-logo {
+				width: 30%;
+				margin-bottom: 40px;
+
+				img {
+					width: 100%;
+				}
+			}
+		}	
+	}
 }
+

@@ -3,10 +3,14 @@
 @import 'vars.scss';
 @import 'arrows.scss';
 
+* {
+  overflow-x: hidden;
+}
+
 body {
     position: relative;
-    line-height: 1;
-    min-height: 10000px;
+    // min-height: 13000px;
+    overflow-x: hidden;
   }
 
   input, button {
@@ -40,7 +44,17 @@ body {
       background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
       z-index: 11;
     }
+  }
 
+  .swiper-wrapper {
+    overflow-x: visible;
+  }
+
+  @media screen and (max-width: $bp-tablet-l){
+    
+    .container {
+      width: 90%;
+    }
   }
 
 @import "sections/*.scss";

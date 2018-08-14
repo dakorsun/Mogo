@@ -1,8 +1,21 @@
 .header {
+  z-index: 30;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 80px;
+  line-height: 80px;
+  &.fixed {
+    height: 60px;
+    line-height: 60px;
+    background: rgba(243, 129, 129, 0.85);
+    transition: all .3s;
+    width: 100%;
 
-  * {
-    overflow-x: hidden;
-    overflow: visible;
+    .header__burger {
+      top: 8px;
+      transition: .3s
+    }
   }
 
   .container {
@@ -14,7 +27,6 @@
       font-size: 30px;
       color: #fff;
       font-weight: 700;
-      padding: 28px 0;
       font-family: Montserrat;
   }
 
@@ -66,43 +78,69 @@
 
   &__burger {
     display: none;
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 40;
+    padding: 5px;
+
+    div {
+      display: block;
+      margin: 6px ;
+      width: 20px;
+      height: 3px;
+      background: #f38181;
+    }
   }
 
   @media screen and (max-width: $bp-tablet-l){
+    
+    &__logo {
+      position: fixed;
+      left: 30px;
+      text-shadow: 3px 3px 5px #f38181;
+      z-index: 40;
+    }
+    
     &__refs {
       position: fixed;
       left: 0;
+      top: -100%;
       width: 100%;
-      overflow-x: hidden;
-      overflow: visible;
+      height: inherit;
       background: rgba(243, 129, 129, 0.85);
       // box-shadow: 0 0 200px 80px rgba(243, 129, 129, 0.85);
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-end;
+      transition: top  .6s;
+      padding: 80px 0;
+      
     
+      &.active {
+        top: 0;
+        transition: top  .3s;
+      }
+
       &-nav, &-icons {
         flex-direction: column;
         width: 100%;
         align-items: center;
-      } 
+        
+        
+        a, div {
+          padding: 15px 0;
+          line-height: 14px;
 
-      &-nav {
-
-        a {
-          padding: 10px 0;
-          border-bottom: 1px solid #fff;
+          // border-bottom: 1px solid #fff;
         }
       }
+    }
 
-      &-icons {
-
-        &-cart, &-scope {
-          padding: 10px 0;
-          border-bottom: 1px solid #fff;
-        }
-      }
-
+    &__burger {
+      display: block;
     }
   }
 }

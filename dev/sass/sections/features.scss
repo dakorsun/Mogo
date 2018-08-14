@@ -5,15 +5,17 @@
     background-repeat: no-repeat;
     margin-top: 70px;
     position: relative;
+    overflow: visible;
 }
 
 .features {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.85);
+    overflow: visible;
 
     .container {
         padding-top: 100px;
-
+        overflow: visible;
     }
 
     &__heading {
@@ -49,11 +51,14 @@
     &__image-block {
         width: 100%;
         display: flex;
+        position: relative;
         justify-content: center;
+        overflow: visible;
 
         &-tablet {
             width: 39.421487603%;
             position: relative;
+            overflow: visible;
 
             img {
                 width: 100%;
@@ -63,9 +68,17 @@
         }
 
         &-mobile {
+            width: 95%;
             position: absolute;
             right: -33.542976939%;
-            bottom: -90px;
+            bottom: -29%;
+        }
+    }
+
+    @media screen and (max-width: $bp-tablet-m) {
+        &__image-block-mobile {
+            width: 100%;
+            bottom: -31%;    
         }
     }
 }

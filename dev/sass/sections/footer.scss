@@ -168,7 +168,7 @@
                 width: 100%;
                 display: flex;
                 justify-content: space-between; 
-                align-items: center; 
+                align-items: top; 
                 margin-bottom: 30px; 
 
                 &-pic {
@@ -240,4 +240,57 @@
             }
         }
     }
+
+    &__footer {
+        overflow: visible;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #e5e5e5;
+        height: 60px;
+        line-height: 60px;
+        color: #333333;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+
+        span {
+            color: #f38181;
+        }
+    }
+
+    @media screen and (max-width: $bp-tablet-l) {
+        &__contacts {
+            flex-wrap: wrap;
+        }
+    
+        &__main {
+            width: 100%;
+        }
+
+        &__blogs {
+            width: 100%;
+
+            &-block {
+
+                &-blog {
+                    justify-content: flex-start;
+                
+                    &-pic {
+                        width: initial;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        
+        &__instagram {
+            width: 100%;
+
+            &-block {
+                width: 270px;
+            }
+        }
+    }
+
+
 }

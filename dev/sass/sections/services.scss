@@ -87,5 +87,25 @@
         }
     }
 
+    @media screen and (max-width: $bp-tablet-m) {
+        
+        &__info {
 
+            &-string {
+                display: none;
+            }
+
+            &-block {
+                width: 100%;  
+
+                &-icon {
+                    width: 5%;
+                }
+
+                &-container {
+                    width: 90%;
+                }
+            }
+        }
+    }
 }
